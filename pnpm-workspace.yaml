@@ -13,3 +13,16 @@ allowBuilds:
   # этого собирается из исходников и требует node-gyp, которого в зависимостях
   # нет, поэтому установка падает.
   sharp: false
+
+# Strapi закрепляет транзитивные зависимости точными версиями, поэтому
+# обновление лока их не поднимает. Переопределяем только те, где есть
+# исправленная версия.
+overrides:
+  '@modelcontextprotocol/node': 2.1.2
+  '@modelcontextprotocol/node>@hono/node-server': 2.1.3
+  '@strapi/cloud-cli>minimatch': 11.0.1
+  glob@13: 14.0.2
+  nodemailer: 10.3.1
+  qs@6.16.0: 6.16.1
+  typedoc>minimatch: 11.0.1
+  undici@6: 6.29.1
