@@ -122,7 +122,7 @@ pnpm install
 
 ## 6. Изменённые файлы
 
-```
+```text
 package.json          — версии Strapi
 pnpm-workspace.yaml   — overrides
 pnpm-lock.yaml        — пересобранный лок
