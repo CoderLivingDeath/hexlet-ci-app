@@ -32,11 +32,11 @@ jobs:
       # Set the project up, run the linter and run the tests.
 
       - name: "install dependencies" 
-        run: npm install
+        run: make install
 
       - name: "run linter" 
-        run: npm run lint
+        run: make lint
 
       - name: "run tests" 
-        run: npm run test
+        run: make test
       # END
