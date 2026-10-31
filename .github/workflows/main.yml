@@ -31,9 +31,12 @@ jobs:
       # BEGIN
       # Set the project up, run the linter and run the tests.
 
-      - run: npm install
+      - name: "install dependencies" 
+        run: npm install
 
-      - run: npm lint
+      - name: "run linter" 
+        run: npm lint
 
-      - run: npm test
+      - name: "run tests" 
+        run: npm test
       # END
